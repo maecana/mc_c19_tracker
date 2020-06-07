@@ -15,7 +15,24 @@
         <!-- END OF STYLE -->
     </head> <!-- END OF HEAD -->
     <body>
-        <div id='map'></div>
+        <div class='container'>
+            <div id='details'>
+                <div class='nav'>
+                    COVID-19 Tracker
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Country</th>
+                            <th>Cases</th>
+                            <th>Recovered</th>
+                            <th>Death</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div id='map'></div>
+        </div>
 
         <!-- JAVASCRIPT -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ7VvobsIYLr3Pe6cTNUnIUvzgpV2Na-o&callback=initMap"
