@@ -1,0 +1,14 @@
+TITLE: COVID-19 Tracker App
+___________________________
+
+DESCRIPTION: 
+A simple google maps app that show all the cases of COVID-19 all around the world.
+
+____________________
+SYSTEM REQUIREMENTS:
+    1. Goal
+       - The goal of this app is to be to display a google maps that shows all COVID-19 cases around the world.
+
+____________________
+BUSINESS REQUIREMENTS:
+    1. Use HTML, CSS, and Javascript as programming language
