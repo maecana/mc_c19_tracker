@@ -20,7 +20,7 @@ SYSTEM REQUIREMENTS:
         3.2. Allow user to zoom in and out of the google maps.
         3.3. Show the user a tabular representation of the data in the google maps.
         3.4. Show the user a bar graph of the tabular representation.
-
+        3.5. Allow user to click on a data set on the map and show details through tooltip.
 ____________________
 TECHNICAL REQUIREMENTS:
     1. Use HTML, CSS, and Javascript as programming language
