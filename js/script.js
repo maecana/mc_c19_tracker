@@ -1,5 +1,16 @@
-// window.onload = () => {
-// }
+window.onload = () => {
+
+    let fetchCovid = fetch('https://disease.sh/v2/countries');
+    fetchCovid.then((response) => {
+        return response.json();
+    }).then((jsonData) => {
+        jsonData.map((eachCountry) => {
+            console.log(eachCountry);
+        });
+    }).catch((error) => {
+        console.log("ERROR", error);
+    });
+}
 
 let map;
 initMap = () => {
