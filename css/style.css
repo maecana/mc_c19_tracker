@@ -21,10 +21,8 @@ body {
 #details {
     width: 20%;
     height: 100vh;
+    overflow-y: scroll;
     border-right: 1px solid #242f3e;
-    flex-grow: 1;
-    display: flex;
-    flex-flow: column wrap;
 }
 
 .nav {
@@ -36,7 +34,7 @@ body {
     text-align: center;
 }
 
-table {
+table, td, th {
     margin: 0;
     width: 100%;
     border: 1px solid gray;
