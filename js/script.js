@@ -4,9 +4,17 @@ window.onload = () => {
     fetchCovid.then((response) => {
         return response.json();
     }).then((jsonData) => {
+        let data = '';
         jsonData.map((eachCountry) => {
-            console.log(eachCountry);
+            data += `<tr>
+                <td>${eachCountry.country}</td>
+                <td>${eachCountry.cases}</td>
+                <td>${eachCountry.recovered}</td>
+                <td>${eachCountry.deaths}</td>
+            </tr>`;
         });
+
+        populateTable(data);
     }).catch((error) => {
         console.log("ERROR", error);
     });
@@ -19,4 +27,11 @@ initMap = () => {
         zoom: 8,
         styles: mapStyle
     });
+}
+
+populateTable = (data) => {
+    let table = document.querySelector('.table');
+    let tbody = document.createElement('tbody');
+    tbody.innerHTML = data;
+    table.appendChild(tbody);
 }
