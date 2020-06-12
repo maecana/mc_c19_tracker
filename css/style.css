@@ -19,7 +19,7 @@ body {
 }
 
 #details {
-    width: 20%;
+    width: 400px;
     height: 100vh;
     overflow-y: scroll;
     border-right: 1px solid #242f3e;
