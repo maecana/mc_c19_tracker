@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>COVID-19 Tracker</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A simple google maps app that show all the cases of COVID-19 all around the world."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Covid19, Covid Tracker, Google Maps"
+    />
+    <meta name="author" content="Mae Anave Caña" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID-19 Tracker</title>
 
-        <!-- JAVASCRIPT -->
-        <script type='text/javascript' src='js/map-style.js'></script>
-        <script type='text/javascript' src='js/script.js'></script>
-        <!-- END OF JAVASCRIPT -->
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="js/map-style.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- END OF JAVASCRIPT -->
 
-        <!-- STYLES -->
-        <link rel='stylesheet' href='css/style.css'>
-        <!-- END OF STYLE -->
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- END OF STYLE -->
+  </head>
+  <!-- END OF HEAD -->
+  <body>
+    <div class="container">
+      <div id="details">
+        <div class="nav">COVID-19 Tracker</div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th>Cases</th>
+              <th>Recovered</th>
+              <th>Death</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div id="map"></div>
+    </div>
 
-        <!-- INCLUDES -->
-        <link rel='stylesheet' href='inc/fontawesome/css/all.css'>
-        <script type='text/javascript' src='inc/fontawesome/js/all.js'></script>
-        <!-- END OF INCLUDES -->
-    </head> <!-- END OF HEAD -->
-    <body>
-        <div class='container'>
-            <div id='details'>
-                <div class='nav'>
-                    COVID-19 Tracker
-                </div>
-                <table class='table'>
-                    <thead>
-                        <tr>
-                            <th>Country</th>
-                            <th>Cases</th>
-                            <th>Recovered</th>
-                            <th>Death</th>
-                        </tr>
-                    </thead>
-                </table>
-            </div>
-            <div id='map'></div>
-        </div>
-
-        <!-- JAVASCRIPT -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ7VvobsIYLr3Pe6cTNUnIUvzgpV2Na-o&callback=initMap"
-            async defer></script>
-        <!-- END OF JAVASCRIPT -->
-    </body> <!--  END OF BODY -->
-</html> <!-- END OF HTML -->
+    <!-- JAVASCRIPT -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJ7VvobsIYLr3Pe6cTNUnIUvzgpV2Na-o&callback=initMap"
+      async
+      defer
+    ></script>
+    <!-- END OF JAVASCRIPT -->
+  </body>
+  <!-- END OF BODY -->
+</html>
+<!-- END OF HTML -->
